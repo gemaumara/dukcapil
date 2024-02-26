@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  width: 1024px;
+  margin: auto;
+  padding: 20px 0px 20px 0px;
+}
+
+/*
+* menu
+*/
+
+nav {
+  background-image: linear-gradient(to right, #B80C0D, transparent);
+  color: #fff;
+  font-size: 1.2rem;
+  top: 0;
+  position: sticky;
+}
+
+nav > .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  width: 32%;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+  margin-left: 30px;
+}
+
+li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bolder;
+}
+
+li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background-color: #B80C0D;
+  margin: auto;
+  display: block;
+}
+
+li a:hover::after {
+  width: 100%;
+  transition: width 0.3s linear;
+  margin-top: 5px;
+}
+
+li a:hover {
+  color: #B80C0D;
+}
+
+/*.menu > ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  justify-content: space-between;
+}
+
+.menu > ul > li > a {
+  text-decoration: none;
+  /*color: #b80b0e;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.menu > ul > li > a:hover {
+  color: #b80b0e;
+}*/
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo > img {
+  height: 65px;
+}
+
+/*
+* hero / jumbotron
+*/
+
+header {
+  min-height: 86vh;
+  background: url("../images/gambar1.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.header-opacity {
+  background-image: linear-gradient(to right, #B80C0D, transparent);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header-jumbotron {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header-jumbotron > h4 {
+  color: #fff;
+  /*font-family: "Ceviche One", system-ui;*/
+  font-family: "Protest Riot", sans-serif;
+  font-size: 50px;
+  font-weight: 18;
+  letter-spacing: 1px;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 20px;
+}
+
+.grid > .item {
+  border: 1px solid #B80C0D;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.grid > .item > .item-detail {
+  padding: 30px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  width: 10%;
+}
+
+.grid > .item > .item-detail > div {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  font-weight: bold;
+}
+
+#layanan {
+  background-color: #fff;
+  color: #B80C0D;
+}
+
+#layanan > .wrapper {
+  padding: 50px 0px 50px 0px;
+}
+
+#layanan > .wrapper > h4 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 50px;
+}
+
+#layanan > .wrapper > .grid > .item {
+  background-color: transparent;
+  margin: 0px;
+  padding: 5px 2px 0px 4px;
+}
+
+#layanan > .wrapper > .grid > .item > .item-detail {
+  padding: 0px;
+  font-size: 1.4rem;
+  width: 100%;
+}
+
+#layanan > .wrapper > .grid > .item > .item-detail > img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/*#layanan > .wrapper > .grid > .item > .item-detail > div {
+  padding: 10px 20px 10px 20px;
+}*/
+
+
+
+
